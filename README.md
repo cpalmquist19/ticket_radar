@@ -107,6 +107,52 @@ Expected output:
 - ✅ All logits within tolerance
 - ✅ Identical accuracy scores
 
+#### Running Inference
+
+Classify new tickets using the trained model:
+
+**Single text prediction:**
+```bash
+python scripts/inference.py --text "I need to update my password"
+```
+
+**Output:**
+```
+Prediction: Change
+Confidence: 99.85%
+```
+
+**Multiple texts from file:**
+```bash
+python scripts/inference.py --file tickets.txt
+```
+
+**CSV file with specific column:**
+```bash
+python scripts/inference.py --file data.csv --csv_column body
+```
+
+**JSON output (for programmatic use):**
+```bash
+python scripts/inference.py --text "My email isn't working!" --json
+```
+
+**Verbose output (shows all class probabilities):**
+```bash
+python scripts/inference.py --text "Ticket text" --verbose
+```
+
+**Use PyTorch model instead of ONNX:**
+```bash
+python scripts/inference.py --text "Ticket text" --use_pytorch
+```
+
+The inference script automatically:
+- Uses ONNX model by default (faster, smaller)
+- Detects and uses GPU if available
+- Provides confidence scores for all predictions
+- Supports batch processing from files
+
 ## 📁 Project Structure
 
 ```
@@ -121,6 +167,7 @@ ticket_radar/
 │   ├── train_model.py       # Model training script
 │   ├── convert_to_onnx.py   # ONNX conversion script
 │   ├── validate_onnx.py     # Model validation script
+│   ├── inference.py         # Inference script for predictions
 │   ├── clean_data.py        # Data cleaning utilities
 │   └── check_labels.py      # Label analysis
 ├── training/
