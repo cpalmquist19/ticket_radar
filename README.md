@@ -190,10 +190,6 @@ See `docs/project_readme.md` for the complete architecture plan.
 
 This project is open source and available under the MIT License.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📧 Contact
 
 - **Author**: Caleb Palmquist
