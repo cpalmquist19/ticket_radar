@@ -198,6 +198,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **Author**: Caleb Palmquist
 - **GitHub**: [@cpalmquist19](https://github.com/cpalmquist19)
+- **LinkedIn**: [Caleb Palmquist](https://www.linkedin.com/in/calebfrommaine/)
 
 ## 🙏 Acknowledgments
 
@@ -207,5 +208,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-**Status**: ✅ Model trained and validated | 🚧 API and deployment infrastructure in progress
-
+**Status**: ✅ Model trained and validated | 🚧 API and deployment are the next milestones.
