@@ -2,6 +2,33 @@
 
 A production-ready ticket classification system using fine-tuned DistilBERT. Classifies support tickets into categories (Change, Issue, Request) with high accuracy.
 
+## Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Model Performance](#-model-performance)
+  - [Classification Performance (Test Set)](#classification-performance-test-set)
+- [Quick Start](#-quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Training a New Model](#training-a-new-model)
+    - [Converting to ONNX](#converting-to-onnx)
+    - [Validating ONNX Model](#validating-onnx-model)
+    - [Running Inference](#running-inference)
+- [Project Structure](#-project-structure)
+- [Model Details](#-model-details)
+  - [Architecture](#architecture)
+  - [Training Configuration](#training-configuration)
+  - [ONNX Conversion](#onnx-conversion)
+- [Development](#-development)
+  - [Data Preparation](#data-preparation)
+  - [Model Training Tips](#model-training-tips)
+- [Future Development](#-future-development)
+- [License](#-license)
+- [Contact](#-contact)
+- [Acknowledgments](#-acknowledgments)
+
 ## 🎯 Overview
 
 Ticket Radar is an ML-powered ticket classification system that:
