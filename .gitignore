@@ -40,8 +40,11 @@ env/
 .DS_Store
 Thumbs.db
 
-# Model files (optional - uncomment if you want to ignore these too)
-# *.pkl
-# *.safetensors
-# *.bin
+# Large model files - use ONNX instead (smaller, more portable)
+*.safetensors
+*.bin
+*.pth
+*.pt
+# Keep ONNX models (they're smaller)
+# *.onnx
 

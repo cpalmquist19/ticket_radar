@@ -4,3 +4,5 @@ torch
 transformers
 scikit-learn
 tqdm
+onnx
+onnxruntime
