@@ -5,4 +5,5 @@ transformers
 scikit-learn
 tqdm
 onnx
-onnxruntime
+onnxruntime-gpu
+onnxscript

@@ -97,8 +97,7 @@ def convert_to_onnx(
             quantize_dynamic(
                 model_input=str(output_path),
                 model_output=str(quantized_path),
-                weight_type=QuantType.QUInt8,
-                optimize_model=True
+                weight_type=QuantType.QUInt8
             )
             
             quantized_size = quantized_path.stat().st_size / (1024 * 1024)
