@@ -45,6 +45,8 @@ Thumbs.db
 *.bin
 *.pth
 *.pt
+# ONNX external data files (not needed - weights are in .onnx file)
+*.onnx.data
 # Keep ONNX models (they're smaller)
 # *.onnx
 
