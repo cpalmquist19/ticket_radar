@@ -164,6 +164,26 @@ python scripts/inference.py --file data.csv --csv_column body
 python scripts/inference.py --text "My email isn't working!" --json
 ```
 
+**JSON Output Example:**
+```json
+{
+  "model_type": "onnx",
+  "num_predictions": 1,
+  "results": [
+    {
+      "text": "My email isn't working!",
+      "prediction": "Issue",
+      "confidence": 0.981642484664917,
+      "class_probabilities": {
+        "Change": 0.004876664374023676,
+        "Issue": 0.981642484664917,
+        "Request": 0.01348087191581726
+      }
+    }
+  ]
+}
+```
+
 **Verbose output (shows all class probabilities):**
 ```bash
 python scripts/inference.py --text "Ticket text" --verbose
